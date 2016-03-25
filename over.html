@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+    <link href="/css/ui-themed.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <!-- PuzzleSwapping references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/image-puzzle.css" rel="stylesheet" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/image-puzzle.js"></script>
+    <style>
+         body {
+                background-color:lightseagreen;
+                font-weight:normal;
+                margin:3px 0px;
+                width : 400px;
+                height:800px;
+                text-align:center
+            } 
+    </style>
+</head>
+<body>
+    <center>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1>GAME OVER</h1>
+        Congratulations!!! <br />
+        You Have Completed this picture. <br />
+        <button id="myButton" class="float-left submit-button">Play Again</button>
+
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "default.html";
+            };
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', 'finish.mp3');
+            audioElement.play();
+            </script>
+        <!--<input type="button" value="Play Again" onclick="window.location.reload(true);">-->
+    </center>
+</body>
+</html>
